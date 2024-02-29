@@ -1,3 +1,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.custom-inp {
+    background: #333;
+    border: 0;
+    border-radius: 4px;
+    color: #fff;
+    height: 50px;
+    line-height: 50px;
+    padding: 0 20px 0;
+}
+
+.sign {
+    cursor: pointer;
+}.sign:hover {
+    border-bottom: 1px solid white;
+}

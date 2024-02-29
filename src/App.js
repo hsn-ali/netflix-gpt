@@ -1,10 +1,10 @@
-import './App.css';
+import Body from "./components/Body";
 
 function App() {
   return (
-    <div className="text-lg bold text-teal-300">
-      Hello World
-    </div>
+      <div>
+          <Body />
+      </div>
   );
 }
 
