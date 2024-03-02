@@ -25,6 +25,12 @@
 - Embedded YT video and made it autoplay and mute
 - Applying tailwind to main container
 - custom hook for movie trailer
+- Building Secondary Container
+- Movie List
+- Movie Card
+- Custom hooks 
+- Upgrading store on genre base movies
+- GPT Search Feature
 
 
 ...

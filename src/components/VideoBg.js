@@ -9,7 +9,7 @@ const VideoBg = ({movieId}) => {
     return (
         <div className='w-screen'>
             <iframe src={'https://www.youtube.com/embed/' + trailerVideo?.key +'?autoplay=1&mute=1'}
-                    className='w-screen aspect-video'
+                    className='w-screen aspect-video' title={trailerVideo?.title}
             allow='accelerometer; autoplay'>
             </iframe>
         </div>

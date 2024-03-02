@@ -23,7 +23,10 @@ const Header = () => {
             }
         });
         // promise will be called when component did unmount
+
         return () => promise;
+
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
 
     const handleSignOut = () => {
@@ -41,7 +44,10 @@ const Header = () => {
                     src={logo}
                     alt="logo"/>
                 {user && (
-                    <div>
+                    <div className='flex'>
+                        <button className='bg-purple-500 text-white py-2 px-4 my-2 rounded'>
+                            GPT SEARCH
+                        </button>
                     <img
                         src={user_avatar}
                         alt="user_avatar"/>
