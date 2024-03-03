@@ -5,6 +5,7 @@ import {useDispatch, useSelector} from "react-redux";
 import {useEffect} from "react";
 import {addUser, removeUser} from "../utils/userSlice";
 import {logo, user_avatar} from "../utils/constant";
+import {toggleGptSearchView} from "../utils/gptSlice";
 
 const Header = () => {
     const route = useNavigate();
@@ -36,6 +37,10 @@ const Header = () => {
         })
     }
 
+    const toggleGptSearch = () => {
+        dispatch(toggleGptSearchView());
+    }
+
     return (
         <div style={{background: 'linear-gradient(180deg,rgba(0,0,0,.5) 0,transparent)'}} className="absolute w-[100%] z-10">
             <div className="flex justify-between">
@@ -45,7 +50,7 @@ const Header = () => {
                     alt="logo"/>
                 {user && (
                     <div className='flex'>
-                        <button className='bg-purple-500 text-white py-2 px-4 my-2 rounded'>
+                        <button className='bg-purple-500 text-white py-2 px-4 my-2 rounded' onClick={toggleGptSearch}>
                             GPT SEARCH
                         </button>
                     <img
