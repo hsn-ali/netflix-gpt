@@ -1,6 +1,5 @@
 import {BG_NETFLIX} from "../utils/constant";
 import main from "../utils/openAi";
-import {useEffect} from "react";
 
 const GptSearch = () => {
 
